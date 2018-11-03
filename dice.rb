@@ -59,17 +59,18 @@ end
 #*******************************************************
 #Main code
 ans=""
+
+system "clear" or system "cls"
+print "Would you like to roll the dice (Y/N)?"
 loop do
-	system "clear" or system "cls"
-	print "Would you like to roll the dice (Y/N)?"
-	loop do
-		ans=gets.chomp.capitalize!
-		if ans != nil then ans.strip!;end
-		puts ""
-		break if ans=="Y"
-		break if ans=="N"	
-	end
-	break if ans=="N"
+	ans=gets.chomp.capitalize!
+	if ans != nil then ans.strip!;end
+	puts ""
+	break if ans=="Y"
+	break if ans=="N"	
+end
+if ans=="N" then exit;end
+loop do	
 	num=rand(1..6)
 	case num
 		when 1
@@ -96,3 +97,6 @@ loop do
 	end
 	break if ans=="N"
 end
+system "clear" or system "cls"
+puts "Thank you for using the dice roll generator"
+puts "Created by Jason Baker 03/11/2018"
