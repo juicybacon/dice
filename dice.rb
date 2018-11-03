@@ -75,16 +75,28 @@ loop do
 	case num
 		when 1
 			one
+			puts ""
+			puts "You have rolled a one"
 		when 2
 			two
+			puts ""
+			puts "You have rolled a two"
 		when 3
 			three
+			puts ""
+			puts "You have rolled a three"
 		when 4
 			four
+			puts ""
+			puts "You have rolled a four"
 		when 5
 			five
+			puts ""
+			puts "You have rolled a five"
 		when 6
 			six
+			puts ""
+			puts "You have rolled a six"
 	end
 	puts ""
 	print "Would you like to roll the dice again(Y/N)?"
